@@ -2,9 +2,8 @@ package com.dio.backend.model;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -19,27 +18,31 @@ import java.time.LocalDateTime;
 
 /*As an option there is @Data from lombok plugin. this will do all those anotation.
  * But is better to read more about thar tool before use it*/
-
 @Entity
-public class User {
+public class Operation {
+
+    @AllArgsConstructor
+    @NoArgsConstructor
+    @EqualsAndHashCode
+    @Embeddable
+    public class OperationId implements Serializable {
+        private Long idOrder;
+        private Long idUser;
+    }
+
+    @EmbeddedId
     @Id
-    private long id;
-    private String name;
+    private OperationId id;
 
-    @ManyToOne
-    private UserCategory userCategory;
-
-    @ManyToOne
-    private Company company;
-
-    @ManyToOne
-    private AccessLevel accessLevel;
-
-    @ManyToOne
-    private Workday workday;
-
-
-    private BigDecimal tolerance;
     private LocalDateTime entrance;
     private LocalDateTime exit;
+    private BigDecimal workTime;
+    private String description;
+
+    @OneToOne
+    private Occurrence occurrence;
+
+    @OneToOne
+    private Calendar calendar;
+
 }

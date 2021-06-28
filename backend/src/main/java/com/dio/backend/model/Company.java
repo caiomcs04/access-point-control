@@ -2,6 +2,8 @@ package com.dio.backend.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
 /*Anotation from lombok plugin*/
@@ -15,7 +17,10 @@ import javax.persistence.OneToOne;
 
 /*As an option there is @Data from lombok plugin. this will do all those anotation.
  * But is better to read more about thar tool before use it*/
+
+@Entity
 public class Company {
+    @Id
     private long id;
     private String description;
     private String cnpj;

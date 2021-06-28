@@ -1,11 +1,14 @@
 package com.dio.backend.model;
 
 import lombok.*;
-import net.bytebuddy.asm.Advice;
 
+import javax.persistence.Embeddable;
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 /*Anotation from lombok plugin*/
 @Getter /*Create get method for all atributes*/
@@ -18,12 +21,26 @@ import javax.persistence.ManyToOne;
 
 /*As an option there is @Data from lombok plugin. this will do all those anotation.
  * But is better to read more about thar tool before use it*/
-@Entity
-public class Location {
-    @Id
-    private long id;
-    private String description;
 
-    @ManyToOne
-    private AccessLevel accessLevel;
+@Entity
+public class AnnualLeave {
+
+    @AllArgsConstructor
+    @NoArgsConstructor
+    @EqualsAndHashCode
+    @Embeddable
+    public class AnnualLeaveId implements Serializable {
+        private Long idOrder;
+        private Long idUser;
+        private Long idAnnualLeave;
+    }
+
+    @EmbeddedId
+    @Id
+    private AnnualLeaveId id;
+
+    private LocalDateTime workDay;
+    private BigDecimal workedHours;
+    private BigDecimal hoursBalance;
+
 }

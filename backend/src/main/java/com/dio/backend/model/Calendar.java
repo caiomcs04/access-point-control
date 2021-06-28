@@ -1,11 +1,11 @@
 package com.dio.backend.model;
 
 import lombok.*;
-import net.bytebuddy.asm.Advice;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import java.time.LocalDateTime;
 
 /*Anotation from lombok plugin*/
 @Getter /*Create get method for all atributes*/
@@ -19,11 +19,12 @@ import javax.persistence.ManyToOne;
 /*As an option there is @Data from lombok plugin. this will do all those anotation.
  * But is better to read more about thar tool before use it*/
 @Entity
-public class Location {
+public class Calendar {
     @Id
     private long id;
-    private String description;
 
-    @ManyToOne
-    private AccessLevel accessLevel;
+    @OneToOne
+    private DateType dateType;
+    private String description;
+    private LocalDateTime especialDate;
 }
