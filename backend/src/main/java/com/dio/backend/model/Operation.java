@@ -1,6 +1,7 @@
 package com.dio.backend.model;
 
 import lombok.*;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -19,6 +20,7 @@ import java.time.LocalDateTime;
 /*As an option there is @Data from lombok plugin. this will do all those anotation.
  * But is better to read more about thar tool before use it*/
 @Entity
+@Audited
 public class Operation {
 
     @AllArgsConstructor
@@ -32,6 +34,7 @@ public class Operation {
 
     @EmbeddedId
     @Id
+    @GeneratedValue
     private OperationId id;
 
     private LocalDateTime entrance;
