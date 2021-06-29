@@ -22,10 +22,17 @@
 >
 > Run BackendApplication(~/backend/src/main/java/com/dio/backend)
 >
-> After starting the service go to [H2 memory bank](http://localhost:8082/h2).
+> After starting the service go to [H2 memory bank](http://localhost:8082/h2)
 >
-![Captura de tela de 2021-06-29 20-08-40](https://user-images.githubusercontent.com/66964367/123878905-598f3f00-d916-11eb-9e84-2e8def3f533e.png)
-> A aplicação estará disponível para visualização em seu navegador, caso isso não aconteça automaticamente abre o navegador no seguinte endereço: _localhost:3000_
+> ![Captura de tela de 2021-06-29 20-08-40](https://user-images.githubusercontent.com/66964367/123878905-598f3f00-d916-11eb-9e84-2e8def3f533e.png)
+>
+> Then press conect to get access to memory bank
+>
+> You can execute any crud using an API develoment plataform of your choice
+>
+> Or you can use [Swagger](http://localhost:8082/swagger-ui.html#/) as well
+> 
+>![Captura de tela de 2021-06-29 20-20-06](https://user-images.githubusercontent.com/66964367/123879556-82640400-d917-11eb-9e00-2c60ba2cb888.png)
 
 ## Funcionalidades
 
