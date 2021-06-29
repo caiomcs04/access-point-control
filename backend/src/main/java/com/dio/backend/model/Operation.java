@@ -38,7 +38,7 @@ public class Operation {
     @OneToOne
     private Calendar calendar;
 
-    @OneToMany
+    @OneToOne
     private User user;
 
 }
