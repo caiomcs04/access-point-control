@@ -38,12 +38,10 @@ public class WorkdayController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Workday> deleteByID(@PathVariable("id") Long id) throws Exception {
-        try {
+    public ResponseEntity<Workday> deleteWorkday(@PathVariable("id") Long id) {
              workdayService.deleteWorkday(id);
-        }catch (Exception e){
-            System.out.println(e.getMessage());
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-        return (ResponseEntity<Workday>) ResponseEntity.ok();
-    }
+
+
 }

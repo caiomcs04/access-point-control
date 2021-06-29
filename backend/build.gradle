@@ -34,6 +34,8 @@ dependencies {
 	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
 	implementation group: 'io.springfox', name: 'springfox-bean-validators', version: '2.9.2'
 
+	implementation group: 'org.hibernate', name: 'hibernate-validator'
+	implementation group: 'org.hibernate', name: 'hibernate-envers'
 	implementation group: 'org.hibernate', name: 'hibernate-core'
 
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
