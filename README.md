@@ -9,31 +9,27 @@
 
 ## Instalação
 
-> Clone esse projeto em seu computador com o comando:
+> Clone this project in your machine with the command:
 > ```
 > 	git clone [https://github.com/caiomcs04/access-point-control.git]
-> ```
-> Acesse a pasta do projeto seu terminal:
-> ```
-> 	cd [Nome da pasta do seu Projeto]
-> ```
-> Já pasta da aplicação em seu terminal, digite o seguinte comando:
-> ```
-> 	yarn install
 > ```
 
 ## Execução
 
-Esse é talvez o tópico mais importante, faça com atenção.
-
-Através das informações especificadas nele, outras pessoas poderam visualizar e testar o funcionamento da sua aplicação.
-
-> Exemplo: 
+> Open project folder using an IDE of your choice
 >
-> Após ter configurado o projeto e ter aguardado a instalação das dependencias de desenvolvimento, execute o comando:
-> ```
-> 	yarn start
-> ```
+> Load gradle changes in build.gradle file
+>
+> Run BackendApplication(~/backend/src/main/java/com/dio/backend)
+>
+> After starting the service go to [H2 memory bank](http://localhost:8082/h2).
+>
+>![2015-09-20 17 02 28](https://cloud.githubusercontent.com/assets/4307137/10105283/251b6868-63ae-11e5-9918-b789d9d682ec.png)
+![2015-09-20 17 16 58](https://cloud.githubusercontent.com/assets/4307137/10105290/2a183f3a-63ae-11e5-9380-50d9f6d8afd6.png)
+![2015-09-20 17 07 53](https://cloud.githubusercontent.com/assets/4307137/10105284/26aa7ad4-63ae-11e5-88b7-bc523a095c9f.png)
+![2015-09-20 17 08 37](https://cloud.githubusercontent.com/assets/4307137/10105288/28698fae-63ae-11e5-8ba7-a62360a8e8a7.png)
+![2015-09-20 17 02 28](https://cloud.githubusercontent.com/assets/4307137/10105283/251b6868-63ae-11e5-9918-b789d9d682ec.png)
+![2015-09-20 17 16 58](https://cloud.githubusercontent.com/assets/4307137/10105290/2a183f3a-63ae-11e5-9380-50d9f6d8afd6.png)
 > A aplicação estará disponível para visualização em seu navegador, caso isso não aconteça automaticamente abre o navegador no seguinte endereço: _localhost:3000_
 
 ## Funcionalidades
