@@ -1,30 +1,17 @@
 # Access Point Control
 
-Model of a back-end with functional cruds and auditing of all operations in all classes. Simulating an employee access point.
-
-> Exemplo:
->
-> Este projeto visa ajudar diretamente os desenvolvedores, principalmente aqueles que não se sentem confortável com o inglês, na elaboração da descrição de seus projetos, fornecendo neste template uma base com tópicos, exemplos de como e o que colocar no README.md.
+>Model of a back-end with functional cruds and auditing of all operations in all classes. Simulating an employee access point.
 
 ## Pré-requisitos
 
-Informe aqui tudo que é obrigatório previamente já ter sido configurado/instalado no ambiente que será executado sua aplicação; exemplifique também como fazê-lo;
-
-> Exemplo (Para criar uma aplicação com React):
-> - **Node** com versão superior ou igual que 8.1 - [Node Donwload](https://nodejs.org/pt-br/download/)
-> - **NPM** com versão superior ou igual que 5.6 - [Npm Donwload](https://www.npmjs.com/package/download)
+> - An IDE of your choice
+> - **Java**with version greater than or equal to 8 - [Java Donwload](https://www.java.com)
 
 ## Instalação
 
-A pergunta a ser respondida aqui é: "Quais comandos precisará outra pessoa fazer para conseguir configurar o seu projeto?"
-
-Recomendo configurar o seu projeto em uma outra pasta/ambiente e anotar aqui todos os passos necessários para a execução.
-
-> Exemplo:
->
 > Clone esse projeto em seu computador com o comando:
 > ```
-> 	git clone [Url do seu repositório]
+> 	git clone [https://github.com/caiomcs04/access-point-control.git]
 > ```
 > Acesse a pasta do projeto seu terminal:
 > ```
