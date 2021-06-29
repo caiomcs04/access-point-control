@@ -1,6 +1,7 @@
 package com.dio.backend.model;
 
 import lombok.*;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,9 +20,10 @@ import javax.persistence.Id;
 /*As an option there is @Data from lombok plugin. this will do all those anotation.
  * But is better to read more about thar tool before use it*/
 @Entity
+@Audited
 public class AccessLevel {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private long id;
     private String description;
 }
