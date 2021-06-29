@@ -1,8 +1,10 @@
 package com.dio.backend.model;
 
 import lombok.*;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
@@ -19,8 +21,10 @@ import javax.persistence.OneToOne;
  * But is better to read more about thar tool before use it*/
 
 @Entity
+@Audited
 public class Company {
     @Id
+    @GeneratedValue
     private long id;
     private String description;
     private String cnpj;
