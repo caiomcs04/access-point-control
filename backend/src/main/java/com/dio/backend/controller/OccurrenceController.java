@@ -29,7 +29,7 @@ public class OccurrenceController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Occurrence>  getOccurrenceById(@PathVariable("id") Long id ) throws Exception {
-        return ResponseEntity.ok(occurrenceService.findById(id).orElseThrow(()->new Exception("Workday not found")));
+        return ResponseEntity.ok(occurrenceService.findById(id).orElseThrow(()->new Exception("Occurrence not found")));
     }
 
     @PutMapping
