@@ -3,6 +3,8 @@ package com.dio.backend.model;
 import lombok.*;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /*Anotation from lombok plugin*/
@@ -19,6 +21,7 @@ import javax.persistence.Id;
 @Entity
 public class AccessLevel {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String description;
 }

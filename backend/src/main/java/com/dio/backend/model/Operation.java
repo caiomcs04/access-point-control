@@ -25,7 +25,7 @@ public class Operation {
     @NoArgsConstructor
     @EqualsAndHashCode
     @Embeddable
-    public class OperationId implements Serializable {
+    public static class OperationId implements Serializable {
         private Long idOrder;
         private Long idUser;
     }
