@@ -46,6 +46,9 @@ public class Operation {
     private Occurrence occurrence;
 
     @OneToOne
+    private User user;
+
+    @OneToOne
     private Calendar calendar;
 
 }

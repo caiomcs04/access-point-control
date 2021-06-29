@@ -1,8 +1,10 @@
 package com.dio.backend.model;
 
 import lombok.*;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import java.math.BigDecimal;
@@ -21,8 +23,10 @@ import java.time.LocalDateTime;
  * But is better to read more about thar tool before use it*/
 
 @Entity
+@Audited
 public class User {
     @Id
+    @GeneratedValue
     private long id;
     private String name;
 
