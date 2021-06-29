@@ -23,19 +23,9 @@ import java.time.LocalDateTime;
 @Audited
 public class Operation {
 
-    @AllArgsConstructor
-    @NoArgsConstructor
-    @EqualsAndHashCode
-    @Embeddable
-    public static class OperationId implements Serializable {
-        private Long idOrder;
-        private Long idUser;
-    }
-
-    @EmbeddedId
     @Id
     @GeneratedValue
-    private OperationId id;
+    private long id;
 
     private LocalDateTime entrance;
     private LocalDateTime exit;
@@ -46,9 +36,9 @@ public class Operation {
     private Occurrence occurrence;
 
     @OneToOne
-    private User user;
-
-    @OneToOne
     private Calendar calendar;
+
+    @OneToMany
+    private User user;
 
 }

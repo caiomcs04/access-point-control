@@ -1,11 +1,9 @@
 package com.dio.backend.model;
 
 import lombok.*;
+import org.hibernate.envers.Audited;
 
-import javax.persistence.Embeddable;
-import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -23,24 +21,18 @@ import java.time.LocalDateTime;
  * But is better to read more about thar tool before use it*/
 
 @Entity
+@Audited
 public class AnnualLeave {
 
-    @AllArgsConstructor
-    @NoArgsConstructor
-    @EqualsAndHashCode
-    @Embeddable
-    public class AnnualLeaveId implements Serializable {
-        private Long idOrder;
-        private Long idUser;
-        private Long idAnnualLeave;
-    }
-
-    @EmbeddedId
     @Id
-    private AnnualLeaveId id;
+    @GeneratedValue
+    private long id;
 
     private LocalDateTime workDay;
     private BigDecimal workedHours;
     private BigDecimal hoursBalance;
+
+    @OneToOne
+    private User user;
 
 }
