@@ -33,12 +33,12 @@ public class AddressController {
     }
 
     @PutMapping
-    public Address updateOccurrence(@RequestBody Address address){
+    public Address updateAddress(@RequestBody Address address){
         return addressService.update(address);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Address> deleteOccurrence(@PathVariable("id") Long id) {
+    public ResponseEntity<Address> deleteAddress(@PathVariable("id") Long id) {
         addressService.deleteAddress(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }

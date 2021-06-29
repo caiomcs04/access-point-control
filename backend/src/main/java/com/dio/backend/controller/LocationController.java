@@ -33,12 +33,12 @@ public class LocationController {
     }
 
     @PutMapping
-    public Location updateOccurrence(@RequestBody Location location){
+    public Location updateLocation(@RequestBody Location location){
         return locationService.update(location);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Location> deleteOccurrence(@PathVariable("id") Long id) {
+    public ResponseEntity<Location> deleteLocation(@PathVariable("id") Long id) {
         locationService.deleteLocation(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
