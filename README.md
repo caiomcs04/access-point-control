@@ -11,7 +11,7 @@
 
 > - Clone this project in your machine with the command:
 > ```
-> 	git clone [https://github.com/caiomcs04/access-point-control.git]
+> 	git clone https://github.com/caiomcs04/access-point-control.git
 > ```
 
 ## Execution
