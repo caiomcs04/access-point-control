@@ -24,8 +24,7 @@
 >
 > - After starting the service go to [H2 memory bank](http://localhost:8082/h2)
 >
-> - Change **JDBC URL**: jdbc:h2:~/test
-> - to **jdbc:h2:~/backend**
+> - Change **JDBC URL** to **jdbc:h2:~/backend**
 >
 > ![Captura de tela de 2021-06-29 20-08-40](https://user-images.githubusercontent.com/66964367/123878905-598f3f00-d916-11eb-9e84-2e8def3f533e.png)
 >
