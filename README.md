@@ -16,7 +16,7 @@
 
 ## Execution
 
-> - Open project folder using an IDE of your choice
+> - Open folder **backend**, inside access-point-control folder, using an IDE of your choice
 >
 > - Load gradle changes in build.gradle file
 >
